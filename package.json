@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "Tool to generate different types of React components from the terminal. Forked from https://github.com/CVarisco/create-component-app.",
   "bin": {
-    "genrc": "./src/index.js"
+    "genrc": "./dist/index.js"
   },
   "repository": "https://github.com/antrix1/create-component-app.git",
   "author": "Andrej Dragojevic <andrejdr.93@gmail.com>",
@@ -11,7 +11,7 @@
   "engines": {
     "node": ">=6"
   },
-  "main": "./src/index.js",
+  "main": "./dist/index.js",
   "files": [
     "dist"
   ],
