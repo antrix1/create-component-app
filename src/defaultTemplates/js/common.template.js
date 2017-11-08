@@ -11,8 +11,9 @@ function generateReactImport(componentType) {
 
 function generateComponentMethods(componentMethods) {
   if (componentMethods.length === 0) {
-    return null
+    return ""
   }
+
   let methods = ''
   componentMethods.forEach((method) => {
     methods += `\n\xa0\xa0${method}(){}\n`
