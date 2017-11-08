@@ -1,6 +1,6 @@
 {
   "name": "genrc",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Tool to generate different types of React components from the terminal. Forked from https://github.com/CVarisco/create-component-app.",
   "bin": {
     "genrc": "./dist/index.js"
