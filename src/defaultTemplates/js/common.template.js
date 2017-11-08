@@ -15,7 +15,7 @@ function generateComponentMethods(componentMethods) {
   }
   let methods = ''
   componentMethods.forEach((method) => {
-    methods += `\n\xa0\xa0\xa0\xa0${method}(){}\n`
+    methods += `\n\xa0\xa0${method}(){}\n`
   })
   return methods
 }
@@ -45,20 +45,26 @@ function generateClassComponent(
   })}
 
 class ${COMPONENT_NAME} extends ${COMPONENT_TYPES[componentType]} {
-    constructor(props) {
-        super(props)
-    }
-    ${generateComponentMethods(componentMethods)}
-    render() {
-        return (
-            <div className="${COMPONENT_NAME}"></div>
-        );
-    }
+  static propTypes() {
+    return {}
+  }
+
+  static get defaultProps() {
+    return {}
+  }
+
+  constructor(props) {
+    super(props)
+  }
+  
+  ${generateComponentMethods(componentMethods)}
+  
+  render() {
+    return (
+      <div className="${COMPONENT_NAME}"></div>
+    );
+  }
 }
-
-${COMPONENT_NAME}.propTypes = {}
-
-${COMPONENT_NAME}.defaultProps = {}
 
 export default ${COMPONENT_NAME}
 `
