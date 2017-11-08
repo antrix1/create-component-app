@@ -140,7 +140,7 @@ function generateFiles(params) {
   } = getFileNames(fileNames, name)
 
   if (indexFile || connected) {
-    containerFileName = `${name}Container.${jsExtension}`
+    let containerFileName = `${name}Container.${jsExtension}`
 
     fs.outputFile(
       `${destination}/${containerFileName}`,
