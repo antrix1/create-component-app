@@ -2,19 +2,15 @@ function generateReduxConnect(COMPONENT_NAME) {
   return `import ${COMPONENT_NAME} from './${COMPONENT_NAME}'
 import { connect } from 'react-redux'
 
-const mapDispatchToProps = (dispatch, ownProps) => {
-    return {}
+const mapDispatchToProps = (dispatch) => {
+  return {}
 }
 
-const mapStateToProps = (state, ownProps) => {
-    return {};
+const mapStateToProps = (state) => {
+  return {};
 }
 
-export default connect(
-    mapStateToProps,
-    mapDispatchToProps,
-)(${COMPONENT_NAME})
-`
+export default connect(mapStateToProps, mapDispatchToProps)(${COMPONENT_NAME})`
 }
 
 function generateIndexFile(COMPONENT_NAME, connected) {

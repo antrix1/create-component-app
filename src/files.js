@@ -140,8 +140,10 @@ function generateFiles(params) {
   } = getFileNames(fileNames, name)
 
   if (indexFile || connected) {
+    containerFileName = `${name}Container.${jsExtension}`
+
     fs.outputFile(
-      `${destination}/index.js`,
+      `${destination}/${containerFileName}`,
       generateIndexFile(componentFileName, connected)
     )
   }
