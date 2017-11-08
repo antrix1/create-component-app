@@ -1,12 +1,12 @@
 {
-  "name": "create-component-app",
-  "version": "1.2.1",
-  "description": "Tool to generate different types of React components from the terminal.",
+  "name": "genrc",
+  "version": "1.0.0",
+  "description": "Tool to generate different types of React components from the terminal. Forked from https://github.com/CVarisco/create-component-app.",
   "bin": {
     "create-component-app": "./dist/index.js"
   },
-  "repository": "https://github.com/CVarisco/create-component-app.git",
-  "author": "Christian Varisco <vari.chri1993@gmail.com>",
+  "repository": "https://github.com/antrix1/create-component-app.git",
+  "author": "Andrej Dragojevic <andrejdr.93@gmail.com>",
   "license": "MIT",
   "engines": {
     "node": ">=6"
